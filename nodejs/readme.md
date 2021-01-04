@@ -1,5 +1,7 @@
 # NodeJS Notes
 
+While on a flight to Florida, I pulled down a local copy of the NodeJS introductory guide and decided to go through it a bit to expand my JavaScript knowledge.
+
 ## Introduction to NodeJS - December 23, 2020
 
 NodeJS runs on the V8 JavaScript engine, which is the same engine that Google Chrome utlizes. There is only one process and one thread. _Unlike ASP.NET Core, a thread is *not* created per request_. But, like ASP.NET, when a blocking task is started, it will be started on a worker thread and will be resumed on the main thread once the response is ready.
