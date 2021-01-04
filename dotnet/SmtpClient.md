@@ -1,6 +1,6 @@
 # SmtpClient
 
-At LMCU, we have begun discussing whether or not we are going to use the `SmtpClient` provided by Microsoft going forward. 
+At LMCU, we discussed whether or not we are going to use the `SmtpClient` provided by Microsoft going forward. 
 
 This discussion all started with Leighann noticing that the [official Documentation for the SmtpClient](https://docs.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=netframework-4.8) mentions the fact that the `SmtpClient` class is not considered Obsolete and that instead it is recommended to use an external third party like [MailKit](https://github.com/jstedfast/MailKit).
 
@@ -21,5 +21,3 @@ There was also a later [Pull Request](https://github.com/dotnet/dotnet-api-docs/
 > - It is included in the .NET Standard and therefore must part part of any .NET implementation
 > - It is present and can be used in .NET Framework 4 through .NET Framework 4.8.  
 > - It is usable in .NET Core, but its use is not recommended.
-
-So essentially, in LMCU's upcoming Intranet rewrite, we will be utilizing Mailkit as suggested.
