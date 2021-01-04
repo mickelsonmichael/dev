@@ -57,15 +57,6 @@ As of now, I don't know that I will use this very often. I might begin to slip i
   - You cannot reuse the code outside of the method
     - However, you could simply rewrite it as a private method without much trouble
 
-### Update January 17, 2020
-
-*Employer:* Lake Michigan Credit Union  
-*Project:* CMS
-
-In the `PageHistoryService` class, I went through and replaced all functions that only had one reference with a local function. This was too far. It was no longer clean code; the functions, while subdivided, were still very long. Additionally, inline functions do not have the benefit of summary documentation.
-
-After a discussion with Lyn and Leighann, we decided that local functions are best used for short, one reference methods. Generally somewhere where a lambda method would be used. They should not be used to replace a private method that does several things. The limit for a local function should comfortably be 3 lines, but 1 line is the ideal.
-
 ## `async` and `await`
 
 This is a more complex topic that I'm still coming to grips on in the early days of 2020.
