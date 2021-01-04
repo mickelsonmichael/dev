@@ -1,0 +1,16 @@
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.csprojAssemblyReference.cache
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.GeneratedMSBuildEditorConfig.editorconfig
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.AssemblyInfoInputs.cache
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.AssemblyInfo.cs
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.csproj.CoreCompileInputs.cache
+/home/me/dev/Notes/dotNet/var_test/bin/Debug/net5.0/var_test
+/home/me/dev/Notes/dotNet/var_test/bin/Debug/net5.0/var_test.deps.json
+/home/me/dev/Notes/dotNet/var_test/bin/Debug/net5.0/var_test.runtimeconfig.json
+/home/me/dev/Notes/dotNet/var_test/bin/Debug/net5.0/var_test.runtimeconfig.dev.json
+/home/me/dev/Notes/dotNet/var_test/bin/Debug/net5.0/var_test.dll
+/home/me/dev/Notes/dotNet/var_test/bin/Debug/net5.0/ref/var_test.dll
+/home/me/dev/Notes/dotNet/var_test/bin/Debug/net5.0/var_test.pdb
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.dll
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/ref/var_test.dll
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.pdb
+/home/me/dev/Notes/dotNet/var_test/obj/Debug/net5.0/var_test.genruntimeconfig.cache
