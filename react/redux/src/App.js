@@ -1,21 +1,11 @@
-import "./App.css";
-import { useState } from "react";
+import Counter from "./counter";
+import { Provider } from "react-redux";
+import store from "./store";
 
-function App() {
-  const [counter, setCounter] = useState(0);
-
-  const increment = () => setCounter((prev) => prev + 1);
-  const decrement = () => setCounter((prev) => prev - 1);
-
-  return [
-    <button type="button" onClick={decrement}>
-      -
-    </button>,
-    <strong>{counter}</strong>,
-    <button type="button" onClick={increment}>
-      +
-    </button>,
-  ];
-}
+const App = () => (
+  <Provider store={store}>
+    <Counter />
+  </Provider>
+);
 
 export default App;
