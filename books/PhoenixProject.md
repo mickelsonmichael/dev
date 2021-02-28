@@ -70,3 +70,13 @@ After, Bill meets with Wes and Patty again to give them the rundown on his Brent
 
 > Every time that we let Brent fix something that none of us can replicate, Brent gets a little smarter, and the entire system gets dumber. We've got to put an end to that.
 
+### Chapter 11 - Thursday, September 11
+
+Patty calls beel back into the CAB to discuss some concerns she has with the change control system they've implemented  using index cards. She's feeling downtrodden, since only 40% of the changes scheduled have actually been implemented so far. The remaining 60% have some reason they cannot continue, either they couldn't get all the pieces they needed, there was an unforseen techmical error, or, in the majority of cases, they needed Brent (who was unavailable to help after Bill instituted his new rules).
+
+The team discusses whether or not it was a good call to restrict Brent, or whether or not the change control system they've started is even a good decision. After some brief discussion, and some heavy insight by Bill concerning what Eric said to him, the team decides on a new plan:
+
+> "[Bill wants Patty] to get [her] arms around the changes that are heading to Brent, indicating them on the change cards and maybe even requiring this information on all new cards. And to get back to [Bill} when [Patty's team knows] how many changes are Brent-bound, what the changes are, and so forth, along with a sense of what the priorities are."
+
+In essence, because Brent is their bottleneck, they are going to record whether or not a task requires Brent's direct intervention, and will apply this logic to all cards from here on out.
+
