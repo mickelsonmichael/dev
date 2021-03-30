@@ -212,3 +212,40 @@ In essence, because Brent is their bottleneck, they are going to record whether 
   - They don't increase scalability, availability, survivability, sustanability, supportability, **security**, or defensibility of the org
   - Therefore they aren't worth doing at the moment
  
+### Chapter 21 - Friday, September 26
+
+- Bill heads over to the meeting with the external auditors
+- John looks ill-composed and is under a lot of stress
+- Despite the tension in the room, Bill is confident, thanks to Eric, that the company will somehow manage to slip through the audit despite not being prepared
+- After five hours, the meeting is concluded with a resounding success
+- It turns out there are a large number of downstream, non-IT controls that would catch any issues caused by the inadequate IT systems
+- The IT team didn't need the security holes patched because there were teams of individuals responsible for catching any issues they let slip
+- John pulls Bill aside to talk, and is distraut that all the time he took doomsaying turned out to be worth nothing
+- After yelling at Bill for the disrespect he and the rest of IT have given John over the years, Erik comes back into the room to turn the tables
+- Erik yells at John pointing out that the biggest risk to Parts Unlimited isn't losing customer data, it's going out of business
+  - If all the security controls put in place grind everything to a hault and force a bankrupcy, then what good were they to the company
+  - "You need to protect it in the process that create the work product"
+
+### Chapter 22 - Monday, September 29
+
+- John has disappeared and nobody knows where he went
+- Wes, Patty, and Bill meanwhile get together to discuss the new monitoring project and how to conceptulize a "bill of resources and routings"
+- After a brief discussion, Patty says she needs time to think about things
+- Next Monday (October 6) Patty has created a rough kanban board with three lanes and four rows
+
+|| Ready | Doing | Done |
+|-|-|-|-|
+| Move worker office ||||
+| Add/change/delete account ||||
+| Provision new desktop/laptop ||||
+| Reset password ||||
+
+- With this Kanban board, Patty has been able to estimate when people are able to get their new laptops (including Bill), and they're currently beating those estimates
+- Patty is also creating checklists for setting up laptops to prevent the number of times the laptop has to come back to be properly configured
+- She also talks about the "Improvement Kata" that the plants go through; two-week improvement cycles (sprints)
+- Later in the day, Patty, Wes, and Bill are discussing how to start releasing work again
+- The entire buisness has prioritized the top five projects, which will be the only five projects that will be released immediately after the freeze
+- Prioritizing internal projects is proving to be harder
+- Bill decides that the highest priority projects are those that increase capacity at the constraint, Brent
+- However, if a project doesn't even require Brent, then it should just be done ASAP since it isn't reliant on the constraint
+- Two days later (October 8) Patty has delivered Bill's new laptop ahead of schedule
