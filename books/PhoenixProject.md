@@ -148,3 +148,67 @@ In essence, because Brent is their bottleneck, they are going to record whether 
 - Bill pushes back saying that involving Brent only leads to more issues because it increases the reliance on Brent
 - Steve demands that Bill call Brent in to fix the issue, despite Bill saying he disagrees
 - Bill gets frustrating with Steve deconstructing his process and resigns right then and there on the phone
+
+-----
+
+## Part 2
+
+### Chapter 17 - Monday, September 22
+
+- Bill is spending his new-found freedom with his son at a trainyard, but is getting calls from his old coworkers
+- Bringing in Brent did exactly as Bill predicted and now inventory management systems are down as well
+- The team obviously feel abandoned by Bill and want him to return
+- Steve finally calls Bill a little later, although Bill dodges the calls until his wife mentions Steve called her directly
+- Steve convinces Bill to return, promising not to interfere any more (after a dressing down from Eric)
+
+### Chapter 18 - Tuesday, September 23
+
+- Bill goes to a leadership "off-site" meeting with Steve, Eric, and the rest of the management team
+- Steve apologizes direclty to Bill
+- Steve also says that it's important for teams to trust each other, so he tells them a story about his life, then asks that the rest of the team do the same
+
+### Chapter 19 - Tuesday, September 23
+
+- Each of IT management team shares personal stories which sparks tears in the room
+- Steve then points out that he believes the major flaw is that IT misses every major commitment and schedule they make
+- Some blame is pushed towards Chris and the development team, but Chris points out that while the stuff is flawed, they hit their deadlines
+- Bill says if that's the case then there's something wrong twith their definition of a completed project
+- The deveolopment team never factors in all the work Ops has to do and leaves no time for Ops to work
+- The team is way over capacity given the current backlog of work
+- The team realizes that John wasn't invited to the meeting and needs to be asked to come in a little late
+- Bill points out that the team has entirely too much techincal debt and no time to work it down
+- Bill then proposes a project freeze; no new projects into IT until some of the technical debt is wittled down and Phoenix is fixed
+- John fights back against the freeze, but Erik tells him that all the safety nets he's put into place (or want to) aren't even necessary
+- Steve agrees to a one-week project freeze to see if it makes a difference for Phoenix
+
+### Chapter 20 - Friday, September 26
+
+- Because of the project freeze, the team is actually gaining traction on the Phoenix Project
+- Bill, Patty, and Wes are in the CAB discussing the flow of work
+- Bill asks how the team determines what work is the priority
+- Right now, the highest priority projects are the ones that shout the loudest or bribe the most
+- Bill heads outside to call Erik who tells him it's time for another trip to the factory
+- Erik asks Bill which work center is his constraint, to which Bill responds "Brent" but that isn't the answer Erik was looking for
+- In the factory analogy, Brent isn't a machine that is a bottleneck, he is a person working that machine. But he's required to run most of those machines
+- The machine is the **work center** and Brent is the **worker** associated with it
+- Work can't be completed on time because Brent can only be at one _work center_ at a time
+- Every _work center_ is made up of four things, (1) the machine, (2) the man, (3) the method, and (4) the measures
+- Bill has already taken proper steps to standardize Brent's work and reduce reliance on him
+- Until they break the reliance on Brent, any future Brents hired will just stand around with nothing to do
+- In terms of the project freeze being lifted, the projects that are safe to unfreeze are the ones that _don't require Brent_
+- Bill realizes a problem is that he doesn't know which projects require Brent until halfway through them, but Erik leaves him to find out how to determine that on his own
+- Bill wants to release a monitoring project, but is unsure whether that's the right move
+  - It doesn't require Brent, the goal is to prevent outages (which would involve Brent), and reduce the reliance on Brent for outages that _do_ occur
+  - Therefore, it's a good candiate for release, if not the most important
+- "...Mike Rother says that it almost doesn't matter what you improve, as long as you're improving something. Why? Because if you aren not improving, entropy gurantees that you are actually geting worse, which ensures that there is no path to zero errors, zero work-related accidents, and zero loss"
+- The team needs to get into the habit (_kata_) of doing these improvements
+- Erik also introduces the concept of the wait-time ratio
+  - `wait time for a resource = % resource busy / % resource idle`
+  - If a resource is 50% utilized and 50% idle, then the wait time is 1
+  - If a resource is 90% utilized and 10% idle, then the wait time is 9 (9x longer than 1)
+  - A critical part of **The Second Way is to make wait times visible** so you know when your work spends days in a queue
+  - Lots of works spends most of its lifetime in a queue
+- Bill asks about whether John's security issues are a good use of time
+  - They don't increase scalability, availability, survivability, sustanability, supportability, **security**, or defensibility of the org
+  - Therefore they aren't worth doing at the moment
+ 
