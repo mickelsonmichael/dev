@@ -2,7 +2,7 @@
 
 I've been reading _The Pheonix Project_ as part of a work book club at Nasdaq. These summaries will be used during the discussion to catch up individuals who didn't get a change to read or for me to review.
 
-## Summaries
+## Part 1
 
 ### Chapter 7 - Friday, September 5
 
@@ -25,7 +25,7 @@ Erik then leads into a discussion about bottlenecks; at the manufacturing plant,
 As they wrap up, Erik asserts that until Bill learns the definition of work, Erik's lessons will go right over his head and he won't be able to see the bigger picture. Bill needs to find the "Mark" in his department; once he does, he can figure out how to control the release of work into IT and ensure that the most constrained resources are doing only the work that serves the entire system. Once he's done that, Bill can begin to understand the three ways
 
 1. The First Way
-  - "...helps us undnerstand how to create fast flow of work as it moves from Development into IT Operations"
+  - "...helps us understand how to create fast flow of work as it moves from Development into IT Operations"
 2. The Seconds Way
   - "...shows us how to shorten and amplify feedback loops, so we can fix quality at the source and avoid rework."
 3. The Third Way
@@ -80,3 +80,71 @@ The team discusses whether or not it was a good call to restrict Brent, or wheth
 
 In essence, because Brent is their bottleneck, they are going to record whether or not a task requires Brent's direct intervention, and will apply this logic to all cards from here on out.
 
+### Chapter 12 - Friday, September 12
+
+- The Phoenix Project is set to release today
+- No one can get all of the Phoenix code running in the test environment
+- Critical issues were coming back from Ops, but most developers had already gone home and needed to be called back in
+- Develops continually send the Ops team incomplete releases missing major files
+- It takes the QA team three and a half hours to get the code set up and run a smoke test; in that time more issues have already come in
+  - Smoke Test - "if you turn the circuit board on and no smoke comes out, it'll probably work"
+  - QA has yet to even make it through the smoke test
+  - Version control has gone out the window and nobody knows which version the team is currently on
+  - Sometimes developers will send over a single file instead of the entire package
+- Bill sends an email out to Steve, Chris, and Sarah to delay the deployment
+  - The team isn't confident they'll be done with the deployment by 8am the next morning when stores open
+  - Steve says they don't have a choice; they've already created marketing materials that are releasing
+- Even worse, someone turned on database indexing too soon, and the inserts are taking too long with no way to stop
+- Performance of the app is bad; memory leaks without even any users
+  - The Ops team will need to restart the server every hour just to keep things running
+- Some additional servers have been requisitioned from around the company to help fuel Phoenix
+  - Ops had virtualization in place to fix issues like this, but the Devs blamed the issues on virtualization so they had to switch back to old-school servers
+- The Ops team will have to manually edit the database to fix some issues, because the software that would help them do it is useless
+- The next morning, all POS systems are down because of the database indexing, but Phoenix is up and running
+  - All stores are manually processing payments
+  - Customers are complaining the new website is unusable, and it has been losing orders in some cases and in others it double- or triple-charges orders
+- The Phoenix site is leaking customer credit card numbers
+
+### Chapter 13 - Monday, September 15
+
+- The Phoenix Phiasco is now front-page news
+- Ops team is restarting the Phoenix servers nearly every hour to combat memory issues still
+- Bill proposes "code rollouts only twice a day and restricting all cod echanges to those affecting performance"  
+  - Sarah of course disagrees but is overruled by the combined agreement of the Ops, Dev, and QA leads
+- In the "war room" created to handle the POS issues, John notices that they are storing CVV2 credit card codes which is an auditing failure
+  - To make theings worse, auditors are on-site _today_, so John goes to distract the auditors and keep them away from the room 
+
+### Chapter 14 - Tuesday, September 16
+
+- Monday night the team managed to stabilize the POS issues with a temporary fix
+- The upper management team are waiting turns to see Steve
+- Bill rebuffs Steve's blame pointing out that he's warned Steve countless times it would be a disaster
+- Steve reveals that the board is considering splitting up the company and is worth more sold in pieces
+- He also says that he is going to outsource IT in 90 days if the team can't pull off a miracle
+- Chris and Bill meet at a bar and create a tentative friendship; a partnership to prevent all of IT from losing their jobs
+
+### Chapter 15 - Wednesday, September 17
+
+- Finally some good news, the new change process managed to catch an issue before it happened
+- Unfortunately, all the changes scheduled after Friday needed to be rescheduled because of Phoenix
+- Bill realizes that the fourth category of work is **Unplanned Work**
+- Bill then calls Erik to get some more advice after finally realizing all four categories of work
+  - **The four categories are (1) Business Projects, (2) Internal Projects, (3) Changes, and (4) Unplanned Work**
+  - A critical part of _The First Way_ is to create a visual management of work and pushing work through the system via index cards and a Kanban board
+  - Eric reveals that Brent is Bill's constraint and that Bill needs to work to protect Brent (as he is currently doing)
+  - Eric mentions a book _The Goal_ by Dr. Eli Goldratt where he explains constraints and bottlenecks. You need to create a system to manage the flow of work to the constraint
+  - If you don't improve flow around the constraint, then work piles up because of unplanned work from technical debt
+  - Bill's next task is exploit the constraint; make sure that the constraint is never able to waste time
+  - After that, step 3 is to "subordinate the constraint" or to limit production to the speed of the constraint. Set the tempo of work according to Brent.
+
+### Chapter 16 - Thursday, September 18
+
+- Another issue; invoices haven't been processed for three days which means the company hasn't been paid
+- The team meets in the crisis room and Bill asserts "DO NOT TOUCH ANYTHING WITHOUT GETTING APPROVAL FROM ME"
+- After a few hours of work, Patty's team has identified over twenty different potential causes for the failure, which is then further narrowed down to _eight_ potential causes
+- An owner is assigned to look into each cause and see if it is the culprit
+- Bill returns home confident that the process is in place and that the team will reconvene at 10pm  with updates
+- Steve calls Bill directly and begins pressuring him to call Brent in and get him to fix the issue, subverting Bill's new system
+- Bill pushes back saying that involving Brent only leads to more issues because it increases the reliance on Brent
+- Steve demands that Bill call Brent in to fix the issue, despite Bill saying he disagrees
+- Bill gets frustrating with Steve deconstructing his process and resigns right then and there on the phone
