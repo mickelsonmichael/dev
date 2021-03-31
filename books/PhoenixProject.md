@@ -285,4 +285,97 @@ In essence, because Brent is their bottleneck, they are going to record whether 
 - John is at a booth and is quite drunk
 - Bill tells him some hard truths about how a lot of the work John had required ended up not being necessary, and it very well may be the case that he never contributed anything worthwhile to the company in three years
 - After they're done talking, Bill manages to get John into a cab and send him home
-- The next day, John has arranged a meeting with the COO Dick, with a "getting to know you" agenda on Monday morning
+- The next day, John has arranged a meeting with the CFO Dick, with a "getting to know you" agenda on Monday morning
+
+### Chapter 25 - Tuesday, October 14
+
+- Bill meets John for their meeting with Dick
+- John has shaved his head and is now wearing some new clothes, with no three-ring binder in sight
+- John asks Dick about his responsibilities, what a "good day" looks like, and what a "bad day" looks like
+- Dick eventually shows him the list of goals he has for the Finance department as CFO
+  - Health of company
+  - Revenue
+  - Market share
+  - Average order size
+  - Profitability
+  - Return on assets
+  - Health of Finance
+  - Order to cash cycle
+  - Accounts receivable
+  - Accurate and timely financial reporting
+  - Borrowing Costs
+- He also shows them a list of important company goals, which he reviews every day
+  - Are we competitive?
+  - Understanding customer needs and wants: Do we know what to build?
+  - Product portfolio: Do we have the right products?
+  - R&D effectiveness: Can we build it effectively?
+  - Time to market: Can we ship it soon enough to matter?
+  - Sales pipeline: Can we convert products to interested prospects?
+  - Are we effective?
+  - Customer on-time delivery: Are customers getting what we promised them?
+  - Customer retention: Are we gaining or losing customers?
+  - Sales forcast accuracy: Can we factor this into our sales planning process?
+- Finally, Dick also provides them with a spreadsheet that lists the managers held responsible and accountable for these goals
+- John and Bill conclude that Dick doesn't realize how much his goals depend on IT
+- Bill calls Erik again
+  - "Appreciation for the system" suggests you must understand the system that IT operates in
+  - IT is partially responsible for many of the goals, but nobody has verbalized that yet (especialy not Dick)
+  - There are some IT controls that aren't necessary because other parts of the organization are mitigating those risks already (see audit issues)
+  - "you mus tlave the realm of IT to discover where the business relies on IT to achieve its goals"
+  - He then gives Bill two new tasks
+    1. Find out where IT is under-scoped, where IT actively jeapardizes the goals
+    2. Find out where IT is over-scoped, where IT wastes times that don't contribute towards those goals
+  - He tells Bill that he and John need to go talk to the people responsible for the goals, find out their roles, what processes work towards those goals, and what jeapordizes them
+  - Erik gives the analogy of a shipping company, where trucks have regular oil changes to ensure that breakdowns are reduced
+
+### Chapter 26 - Friday, October 17
+
+- Bill is scheduled to meet with Ron Johnson, VP of Manufacturing Sales
+- Ron points out that his team needs forcasting data about what the customers want and they aren't getting it
+- Ron also complains about all the outages losing them valueable customers constantly, or causing other customers to rethink their contracts
+- Bill and Patty then go see Maggie Lee, the project sponsor for Phoenix
+- Much like Ron, Maggie complains about a lack of information about what the customers want
+- The main point of both conversations seems to be there's a lack of accurate and timely reporting; having that could really turn the company around
+
+### Chapter 27 - Tuesday, October 27
+
+- Patty, Wes, Chris, John, and Bill are convening about their findings from their meetings
+- Bill draws a table listing Dick's performance measures, what systems in IT they rely on, how IT could add risk to those goals, and which IT systems contribute towards them
+- See page 265 for the table
+- The team creates a list of actionable goals that can help them support the necessary systems
+- They take the list of proposals to Dick, who is seemingly upset that they didn't know them before
+- Bill proposes that they take three weeks with each of the business leaders to get better defined risks and come up with solutions to "integrate those risks into leading indicators of performance"
+- Bill also states flatout that as it is now, Phoenix should never have been approved
+- Dick gives his blessing and the team is off
+- The group meets up with John again, this time to talk about what John has learned
+  - Lots of the controls John put in place weren't necessary thanks to work downstream
+  - IT needs to know what downstream controls are in place already so they can spend time worrying about more critical issues
+  - He proposes several changes to Security
+    1. Reduce the scope of the SOX-404 compliance program, since it is unecessary thanks to downstream protections
+    2. Find out how production vulnerabilities got there and prevent them from happening again by modifying the deployment process
+    3. Flag all systems in the scope for compliance audits to avoid changes that could jeapordize audits, allowing them to create the ongoing documentation auditors need
+  - He also suggests they remove the "cafeteria POS" system and outsource it to a reliable third-party
+  - The team agrees that it is important to pay down some more of their technical debt
+
+### Chapter 28 - Monday, October 27
+
+- Project managers are very happy with the new process in place after the freeze
+- The backlog has been wittled down and is nearly gone at this point
+- Bill is riding high, internally listing all the accomplishments they've managed in a short amount of time
+- The wind is taken out of his sails when John calls and sasys that Sarah has been going around the IT freeze by outsourcing
+  - She is having a vendor doing some data mining of customer information, which is a breach of Parts Unlimited's Privacy Policy
+  - Worse, the vendor uses the same DB tech that the now-removed cafeteria POS system used to use, which is difficult to secure and maintain in production
+- "It's Phoenix deployment day" and although the team has only bugfixes, the release still takes all night because of a database inconsitency between the Dev, QA, and Production environments
+
+### Chapter 29 - Monday, November 3
+
+- Steve and the IT team are in the boardroom to meet with Sarah and confront her about her outsourced IT projects
+- Unwillingly, she agrees to meet with Bill and Chris regularly to see how they can help with upcoming initiatives
+- Once she's gone, the team starts to talk about Phoenix
+- Erik states that it's hard to reach targets because they are releasing so infrequently; "you'll never hit the target you're aiming at [with a cannon] if you can fire the cannon only once every nine months"
+- The team should continually reduce batch sizes and create a build pipeline to make deployments graually more rapid
+- Erik points out the importants of not going in reverse with tasks, only going foward
+- The team needs to get Brent into the earliest stages of the development process; he needs to fix the deployments before they even happen
+- Bill proposes a new "SWAT team" outside of Phoenix that will create features that will help hit revenue goals as quickly as possible
+- The team is allowed to "break whatever rules required to get the job done"
+- Initially, the team will focus on customer recommendations to allow marketing to create enticing promotions
