@@ -2,6 +2,12 @@
 
 I've been reading _The Pheonix Project_ as part of a work book club at Nasdaq. These summaries will be used during the discussion to catch up individuals who didn't get a change to read or for me to review.
 
+## Review
+
+Overall, this book fell off pretty hard. It started really strong, pulling me in with a dramatic and exciting story and likeable characters. But as time went on I found that the more they piled on to the characters the less I seemed to care, and most of the characters ended up losing their new-toy shine. The lessons began to feel like I was being spoonfed, but in the most roundabout way; they almost would have been better off being told by an omnipotent narrator instead of by the "guru" Erik, who served as glorified exposition and a "Superman" character who has no flaws beyond personality traits. I also found myself becoming irritated with how incorrect the dates in the book became; for a book where every day is important and every chapter starts with the date, it sure does fudge the timeline a lot. For an example, in Chapter 24, John calls Erik on a Saturday and meets him at a bar that night. The next morning, John teslls Bill to prepare for a meeting with Dick "tomorrow" (Monday). The next chapter, 25, then proclaims that the date is "Tuesday, October 14) but starts the first sentence with "The next morning at 7:50am" (which would be a Monday according to the last chapter). This happends often and is extremely confusing if trying to follow an accurate account as I've done for this summary.
+
+# Summaries
+
 ## Part 1
 
 ### Chapter 7 - Friday, September 5
@@ -249,3 +255,26 @@ In essence, because Brent is their bottleneck, they are going to record whether 
 - Bill decides that the highest priority projects are those that increase capacity at the constraint, Brent
 - However, if a project doesn't even require Brent, then it should just be done ASAP since it isn't reliant on the constraint
 - Two days later (October 8) Patty has delivered Bill's new laptop ahead of schedule
+
+### Chapter 23 - Tuesday, October 7
+
+- Brent is late doing a Phoenix Project task that should have taken him less than an hour
+- Turns out its' because the task is spending most of it's time in queues waiting to be worked on
+- The team looks back at the wait-time equation
+
+![Wait Time Graph from itrevolution.com](https://user-images.githubusercontent.com/19243212/113167712-382c9300-9201-11eb-97c5-8b7075cb3306.png)
+
+- The team's estimates weren't properly accounting for this wait time when considering how long tasks would take
+- Again, they resolve to continue to document and standardize work as it comes in to reduce the time it takes for future work to be completed
+- Finally, Patty suggests that they have an "expiditer" who will manage the handoffs until they can get proper Kanbans created for the tasks
+
+### Chapter 24 - Saturday, October 11
+
+- After a relaxing day off, Bill gets an unexpected call from John who has been off the radar for several weeks
+- He ignores the call, then proceeds to get 15 more, all from John
+- John is drunk and wants to take Bill out for a last drink before he "leaves" (but assures Bill he doesn't mean ending his life)
+- Bill heads to the bar and finds that John has packed up a Uhaul and attached it to his car
+- John is at a booth and is quite drunk
+- Bill tells him some hard truths about how a lot of the work John had required ended up not being necessary, and it very well may be the case that he never contributed anything worthwhile to the company in three years
+- After they're done talking, Bill manages to get John into a cab and send him home
+- The next day, John has arranged a meeting with the COO Dick, with a "getting to know you" agenda on Monday morning
