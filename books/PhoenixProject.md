@@ -379,3 +379,73 @@ In essence, because Brent is their bottleneck, they are going to record whether 
 - Bill proposes a new "SWAT team" outside of Phoenix that will create features that will help hit revenue goals as quickly as possible
 - The team is allowed to "break whatever rules required to get the job done"
 - Initially, the team will focus on customer recommendations to allow marketing to create enticing promotions
+
+-----
+
+## Part 3
+
+### Chapter 30 - Monday, November 3
+
+- Right after the meeting, Bill calls Erik again and the two go to the MRP-8 plant once more
+- Erik tells about a scenario where the most popular new product took a long time to create
+  - It required two different steps that took a long duration
+  - In order to ship enough product to meet demand, the steps had to be done in _huge_ batches
+  - The plant found a way to combine the two steps into a single machine
+  - This elminated multiple steps and reduce the setup time drastically
+- Erik also mentions a talk given by Flickr developers John Allspaw and Paul Hammond
+  - Flickr at the time was doing 10 deployments a day
+  - The two talked about how QA, Dev, Operations, and the business unit all worked together to create a "super tribe"
+  - They ensured that environments were always available, allowing them to rapidly push work through the pipeline, making one-step environment creation and deployment procedure
+- He then gives Bill the next objectives
+  1. Create a deployment pipeline
+  2. Get everything into version control, including everything required to build the environment
+  3. Automate the entire environment creation process. A pipeline where you can create environments and deploy code to them on-demand
+- These objectives will reduce steup time and eliminate errors
+
+### Chapter 31 - Monday, November 3
+
+- After meeting with Erik, Bill enters the first SWAT team meeting
+- He tells the team about Erik's objective to do 10 deploys a day
+- There are disagreements about the number of steps it takes to do a deployment between Dev, QA, and Ops; Bill asks each of them to write down all the steps, starting from code committed, to get something deployed
+- Before the process even hits Ops, there are over 100 steps between dev and QA
+- With the current process they have, two issues keep occuring
+  1. Environments aren't available when needed and aren't syncrhonized
+  2. Code packaging takes too long and is too error prone because QA has to rely on poor documentation to do it
+- Brent and William agree to work on a deployment run book and automate the environment creation process
+- William also wants to get packaged code instead of compiled code; he wants something he can deploy immediately to an environment without having to do any packaging work
+
+### Chapter 32 - Monday, November 10
+
+- The team names the SWAT team project _Project Unicorn_
+- "[they] started with a clean code bas that was completely decoupled from the Phoenix behemoth"
+- To anaylyze the customer data, the team created  a completely new database with data copied from Phoenix, ordery entry, and inventory management systems allowing them to develop and test without impacting the other processes
+- Using virtualization, they standardized the operating system, library versions, settings, etc. for creating builds on developer machines
+- Again, Sarah takes the wind out of the sales by forcing Brent to fly to Des Moines to help determine how best to split up the company. What's worse is that she did this without teling anyone, including Steve and Bill
+- Bill tells Brent to deliberately miss his flights and talks with Steve to instead get one of the other engineers to do Sarah's project instead of Brent
+
+### Chapter 33 - Tuesday, November 11
+
+- _Note: it's veterans day and the man who reminds us that he is a veteran every chapter says nothing about that fact..._
+- Project Unicorn reaches an issue because some of their reports take too long to generate
+- To get around that, the team utilizes cloud computing mechanisms to run the processes somewhere off-site and not bog-down local resources
+- After the sucess of that initiative, Unicorn is now fully running all services, including production, in the cloud
+- Unicorn is turning out huge improvements in the company's ability to react to trends, which is leading to a massive spike in sales
+
+### Chapter 34 - Friday, November 28
+
+- Another Severity 1 issue arises on Thanksgiving and the team is assembled
+- The traffic to the site is too high and is causing issues, so a developer suggests disabling the automatic recommendations for the time being
+- Another fix is to optimize database queries and move large graphics to a third-party CDN
+- Beacuse the stocks are selling out too quickly, the team decides on Friday that they need to create a web page for employees to automate the redemption of promo codes when the items aren't in stock at the store but are in stock at the warehouse, as well as a new form on the customer account web page where they can get items delivered directly to them
+- Another meeting with Steve and Sarah proves optimistic until Sarah complains that she wants to implement custom-orders
+- The team thought it would be possible easily, but it turns out that they would need to rewrite a system that has been outsourced several years ago
+- The original plan had been to replace the system but never happened
+- The change would take the vendor months to perform, which is far too long a turnaround time
+- Instead, Bill suggests a buyout of the contract so they can get their hands back on the application and make the rewrite, and Steve and Dick buy in to the idea
+
+### Chapter 35 - Friday, January 9
+
+- Unicorn is still a star, and Bill is on his way to Steve's house
+- Steve sits him down and talks about a promotion to COO after Dick retires
+- Erik says some corny stuff about how Bill should write a book called "The DevOps Handbook"
+- Eyerolling commences on the reader's part
